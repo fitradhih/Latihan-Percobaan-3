@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,9 +13,10 @@ body {
 .logoadidas {
     width: 120px;
     height: auto;
+    cursor: pointer;
 }
 
-.welcome{
+.welcome {
     background-color: #000000;
     color: white;
     padding: 10px 20px;
@@ -26,84 +27,191 @@ body {
 
 .navbar {
     background-color: #ffffff;
-    color: rgb(92, 92, 92);
+    color: rgb(97, 97, 97);
     display: flex;
     padding: 15px 20px;
     align-items: center;
 }
 
 .menuutama {
-    float: left ;
+    cursor: pointer;
+    float: left;
     list-style: none;
 }
 
-.menu-item1{
-    float: left;
-    margin: 0px 50px;
-}
-.menu-item2{
-    float: left;
-    margin: 0px 50px;
-}
-.menu-item3{
-    float: left;
-    margin: 0px 50px;
-}
-.menu-item4{
-    float: left;
-    margin: 0px 50px;
-}
-.menu-item5{
-    float: left;
-    margin: 0px 50px;
-}
-.menu-item6{
+.menu-item1 {
     float: left;
     margin: 0px 50px;
 }
 
+.menu-item1:hover {
+    font-size: 23px;
+}
+
+.menu-item2 {
+    float: left;
+    margin: 0px 50px;
+}
+
+.menu-item2:hover {
+    font-size: 23px;
+}
+
+.menu-item3 {
+    float: left;
+    margin: 0px 50px;
+}
+
+.menu-item3:hover {
+    font-size: 23px;
+}
+
+.menu-item4 {
+    float: left;
+    margin: 0px 50px;
+}
+
+.menu-item4:hover {
+    font-size: 23px;
+}
+
+.menu-item5 {
+    float: left;
+    margin: 0px 50px;
+}
+
+.menu-item5:hover {
+    font-size: 23px;
+}
+
+.menu-item6 {
+    float: left;
+    margin: 0px 50px;
+}
+
+.menu-item6:hover {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
 .welcome2 {
-    background-color: #c0c0c0;
+    background-color: #dddcdc;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
 }
 
-h3{
-    margin-top: 20px;
+.SHOPBAR {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    list-style: none;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.shop-item1 {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.shop-item2 {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.shop-item3 {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.tepi {
+    background-color: #ffffff;
+    margin: 50px;
     color: #000000;
 }
 
-.Shoes {
-    gap: 20px;
-    margin-top: 20px;
+.kotak-team {
+    flex: 0 1 auto; 
+    max-width: 200px; /* Lebar maksimum untuk setiap kotak */
+    height: auto; /* Tinggi tetap untuk setiap kotak */
+    margin: 1px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    border: 1px solid #949494; /* Memberi border tipis untuk membedakan setiap kotak */
+    color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
+    align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
+    justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
+    overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
+    position: relative; /* Menjadikan posisi relatif untuk memungkinkan penempatan nama team secara absolut di dalam kotak */
+}
+
+.kotak {
+    flex: 0 0 320px; /* Membuat setiap kotak memiliki lebar tetap 200px */
+    height: auto;
+    margin: 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    border: 1px solid #949494; /* Memberi border tipis untuk membedakan setiap kotak */
+    color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
+    align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
+    justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
+    overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
+}
+
+.nama-team {
+    position: absolute;
+    bottom: 10px; /* Menempatkan nama team di bagian bawah kotak */
+    left: 15px;
+    font-size: 18px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Team, .Shoes, .Clothing, .Jacket {
     display: flex;
-    width: 300px;
-    height: 400px;
+    gap: 5px;
+    overflow-x: auto; /* Biar kalau produknya banyak, bisa di-scroll ke samping */
+    padding-bottom: 15px;
+}
+.tepi h1 {
+    margin: 40px 0 5px 10px;
 }
 
-.Sepatu2 {
+.tepi h3 {
+    margin: 40px 0 5px 10px;
 }
 
-.Clothing {
-    width: 300px;
-    height: 400px;
-    gap: 20px;
-    display: flex;
-    margin-top: 20px;
+.kotak-team img {
+    width: 100%;
+    height: auto;
+    display: block; /* Menghilangkan jarak bawah pada gambar */
 }
 
-.Jacket {
-    margin : 30px 0px 0px 150px;
-    width: 300px;
-    height: 400px;
-    gap: 20px;
-    display: flex;
+.kotak img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memaksa gambar mengisi penuh kotak tanpa merusak rasio/proporsinya */
 }
 
-p {
-    color: #ff3d3d;
-
+.footer-content {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
