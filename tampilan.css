@@ -16,6 +16,24 @@ body {
     cursor: pointer;
 }
 
+.logologin {
+    display: flex;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    float: left;
+    margin-left: 730px;
+}
+
+.logokeranjang {
+    display: flex;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+}
+
 .welcome {
     background-color: #000000;
     color: white;
@@ -45,7 +63,12 @@ body {
 }
 
 .menu-item1:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .menu-item2 {
@@ -54,7 +77,12 @@ body {
 }
 
 .menu-item2:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .menu-item3 {
@@ -63,7 +91,12 @@ body {
 }
 
 .menu-item3:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .menu-item4 {
@@ -72,7 +105,12 @@ body {
 }
 
 .menu-item4:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .menu-item5 {
@@ -81,7 +119,12 @@ body {
 }
 
 .menu-item5:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .menu-item6 {
@@ -90,7 +133,12 @@ body {
 }
 
 .menu-item6:hover {
-    font-size: 23px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ffffff;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 h2 {
@@ -149,7 +197,7 @@ h2 {
     flex: 0 1 auto; 
     max-width: 200px; /* Lebar maksimum untuk setiap kotak */
     height: auto; /* Tinggi tetap untuk setiap kotak */
-    margin: 1px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    margin: 0 0 0 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
     border: 1px solid #949494; /* Memberi border tipis untuk membedakan setiap kotak */
     color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
@@ -205,8 +253,14 @@ h2 {
 
 .kotak img {
     width: 100%;
-    height: 100%;
+    height: 320px;
     object-fit: cover; /* Memaksa gambar mengisi penuh kotak tanpa merusak rasio/proporsinya */
+}
+
+.kotak-deskripsi{
+    border: 1px solid #949494;
+    padding: 1px;
+    color: #d76666;
 }
 
 .footer-content {
