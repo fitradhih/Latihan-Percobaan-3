@@ -16,22 +16,26 @@ body {
     cursor: pointer;
 }
 
-.logologin {
+.logobelanja {
     display: flex;
+    gap: 15px;
     width: 30px;
-    height: auto;
+    height: 30px;
+    position: absolute;
+    right: 70px;
     cursor: pointer;
-    float: left;
-    margin-left: 730px;
 }
 
-.logokeranjang {
-    display: flex;
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-    float: left;
-    margin-left: 30px;
+.logologin:hover {
+    transform: scale(1.1);
+    opacity: 0.3;
+    transition: transform 0.3s ease;
+}
+
+.logokeranjang:hover {
+    transform: scale(1.1);
+    opacity: 0.3;
+    transition: transform 0.3s ease;
 }
 
 .welcome {
@@ -44,6 +48,10 @@ body {
 }
 
 .navbar {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
     background-color: #ffffff;
     color: rgb(97, 97, 97);
     display: flex;
@@ -146,6 +154,7 @@ h2 {
 }
 
 .welcome2 {
+    margin-top: 10px;
     background-color: #dddcdc;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
@@ -207,16 +216,41 @@ h2 {
     position: relative; /* Menjadikan posisi relatif untuk memungkinkan penempatan nama team secara absolut di dalam kotak */
 }
 
+.subjudul {
+    display: flex;
+}
+
+.lihat-semua {
+    color: #000000;
+    position: absolute; /* Menjadikan posisi absolut untuk menempatkan "Lihat Semua" di posisi yang tepat */
+    right: 50px; /* Menempatkan "Lihat Semua" di sisi kanan dengan jarak 30px */
+    font-size: 15px;
+    text-decoration: underline; 
+}
+
+.lihat-semua:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
 .kotak {
     flex: 0 0 320px; /* Membuat setiap kotak memiliki lebar tetap 200px */
     height: auto;
     margin: 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
-    border: 1px solid #949494; /* Memberi border tipis untuk membedakan setiap kotak */
+    /* border: 1px solid #949494; Memberi border tipis untuk membedakan setiap kotak */
     color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
     align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
     justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
     overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
+}
+
+.kotak:hover {
+    transform: translateY(-13px); /* Mengangkat kotak sedikit saat hover */
+    transition: transform 0.3s ease;
 }
 
 .nama-team {
@@ -237,6 +271,7 @@ h2 {
     overflow-x: auto; /* Biar kalau produknya banyak, bisa di-scroll ke samping */
     padding-bottom: 15px;
 }
+
 .tepi h1 {
     margin: 40px 0 5px 10px;
 }
@@ -258,9 +293,12 @@ h2 {
 }
 
 .kotak-deskripsi{
-    border: 1px solid #949494;
     padding: 1px;
-    color: #d76666;
+    color: #000000;
+}
+
+.kotak-deskripsi p {
+    margin: 5px;
 }
 
 .footer-content {
