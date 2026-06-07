@@ -196,6 +196,25 @@ h2 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
+.gambaradidasxcocacola {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.gambarworldcup img{
+    width: 200px;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.gambaradidascollab{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
 .tepi {
     background-color: #ffffff;
     margin: 50px;
@@ -206,14 +225,25 @@ h2 {
     flex: 0 1 auto; 
     max-width: 200px; /* Lebar maksimum untuk setiap kotak */
     height: auto; /* Tinggi tetap untuk setiap kotak */
-    margin: 0 0 0 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
-    border: 1px solid #949494; /* Memberi border tipis untuk membedakan setiap kotak */
+    margin: 20px 0 0 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
     color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
     align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
     justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
     overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
     position: relative; /* Menjadikan posisi relatif untuk memungkinkan penempatan nama team secara absolut di dalam kotak */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
+}
+
+.kotak-team:hover {
+    transform: translateY(10px); /* Mengangkat kotak sedikit saat hover */
+    transition: transform 0.5s ease;
+    border: 1px solid #000000; /* Menambahkan border saat hover */
+}
+
+.below{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 20px 0 0 0;
 }
 
 .subjudul {
@@ -241,7 +271,7 @@ h2 {
     margin: 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
     /* border: 1px solid #949494; Memberi border tipis untuk membedakan setiap kotak */
     color: rgb(0, 0, 0); /* Semua tulisan di dalam kotak berwarna putih */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan halus */
+
     align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
     justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
     overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
@@ -249,8 +279,9 @@ h2 {
 }
 
 .kotak:hover {
-    transform: translateY(-13px); /* Mengangkat kotak sedikit saat hover */
+    transform: translateY(-7px); /* Mengangkat kotak sedikit saat hover */
     transition: transform 0.3s ease;
+    border: 1px solid #000000; /* Menambahkan border saat hover */
 }
 
 .nama-team {
@@ -273,11 +304,11 @@ h2 {
 }
 
 .tepi h1 {
-    margin: 40px 0 5px 10px;
+    margin: 0 0 5px 10px;
 }
 
 .tepi h3 {
-    margin: 40px 0 5px 10px;
+    margin: 10px 0 5px 10px;
 }
 
 .kotak-team img {
