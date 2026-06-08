@@ -200,13 +200,59 @@ h2 {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    position: relative; /* Menjadikan posisi relatif untuk memungkinkan penempatan teks di atas gambar */
+}
+
+.cocacola-text {
+    background-color: rgba(0, 0, 0); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 27%;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cocacola-text2 {
+    background-color: rgba(0, 0, 0); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20%;
+    left: 20px;
+    color: white;
+    font-size: 23px;
+}
+
+.cocacola-text3 {
+    background-color: rgba(255, 255, 255); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 11%;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.cocacola-text3:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+}
+
+.gambarworldcup{
+    display: flex;
+    justify-content: center;
 }
 
 .gambarworldcup img{
     width: 200px;
     height: auto;
     margin-top: 60px;
-    justify-content: center;
 }
 
 .gambaradidascollab{
