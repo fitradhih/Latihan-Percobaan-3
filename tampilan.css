@@ -201,16 +201,15 @@ h2 {
     width: 100%;
     height: auto;
     margin-top: 20px;
-    position: relative;
-    /* Menjadikan posisi relatif untuk memungkinkan penempatan teks di atas gambar */
+    position: relative; /* Menjadikan posisi relatif untuk memungkinkan penempatan teks di atas gambar */
 }
 
 .cocacola-text {
-    background-color: rgba(0, 0, 0);
-    /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    background-color: rgba(0, 0, 0); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
     padding: 10px;
     border-radius: 10px;
     position: absolute;
+    bottom: 40%;
     left: 20px;
     color: white;
     font-size: 30px;
@@ -222,22 +221,22 @@ h2 {
 }
 
 .cocacola-text2 {
-    background-color: rgba(0, 0, 0);
-    /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    background-color: rgba(0, 0, 0); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
     padding: 10px;
     border-radius: 10px;
     position: absolute;
+    bottom: 33%;
     left: 20px;
     color: white;
     font-size: 23px;
 }
 
 .cocacola-text3 {
-    background-color: rgba(255, 255, 255);
-    /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    background-color: rgba(255, 255, 255); /* Memberikan latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
     padding: 10px;
     border-radius: 10px;
     position: absolute;
+    bottom: 24.5%;
     left: 20px;
     color: rgb(0, 0, 0);
     font-size: 30px;
@@ -279,24 +278,15 @@ h2 {
 
 .kotak-team {
     flex: 0 1 auto;
-    max-width: 200px;
-    /* Lebar maksimum untuk setiap kotak */
-    height: auto;
-    /* Tinggi tetap untuk setiap kotak */
-    margin: 20px 0 0 10px;
-    /* Memberi jarak vertikal antara kotak dengan elemen lain */
-    color: rgb(0, 0, 0);
-    /* Semua tulisan di dalam kotak berwarna putih */
-    align-items: center;
-    /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
-    justify-content: center;
-    /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
-    overflow: hidden;
-    /* Mencegah konten di dalam kotak keluar dari batas kotak */
-    position: relative;
-    /* Menjadikan posisi relatif untuk memungkinkan penempatan nama team secara absolut di dalam kotak */
-    cursor: pointer;
-    /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
+    max-width: 200px;       /* Lebar maksimum untuk setiap kotak */
+    height: auto;           /* Tinggi tetap untuk setiap kotak */
+    margin: 20px 0 0 10px;  /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    color: rgb(0, 0, 0);  /* Semua tulisan di dalam kotak berwarna putih */
+    align-items: center;    /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
+    justify-content: center;/* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
+    overflow: hidden;       /* Mencegah konten di dalam kotak keluar dari batas kotak */
+    position: relative;     /* Menjadikan posisi relatif untuk memungkinkan penempatan nama team secara absolut di dalam kotak */
+    cursor: pointer;        /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
 }
 
 .kotak-team:hover {
@@ -335,37 +325,28 @@ h2 {
 }
 
 .kotak {
-    flex: 0 0 320px;
-    /* Membuat setiap kotak memiliki lebar tetap 200px */
+    flex: 0 0 320px; /* Membuat setiap kotak memiliki lebar tetap 200px */
     height: auto;
-    margin: 10px;
-    /* Memberi jarak vertikal antara kotak dengan elemen lain */
+    margin: 10px; /* Memberi jarak vertikal antara kotak dengan elemen lain */
     /* border: 1px solid #949494; Memberi border tipis untuk membedakan setiap kotak */
     color: rgb(0, 0, 0);
     /* Semua tulisan di dalam kotak berwarna putih */
 
-    align-items: center;
-    /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
-    justify-content: center;
-    /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
-    overflow: hidden;
-    /* Mencegah konten di dalam kotak keluar dari batas kotak */
-    cursor: pointer;
-    /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
+    align-items: center; /* Mengatur agar konten di dalam kotak berada di tengah secara vertikal */
+    justify-content: center; /* Mengatur agar konten di dalam kotak berada di tengah secara horizontal */
+    overflow: hidden; /* Mencegah konten di dalam kotak keluar dari batas kotak */
+    cursor: pointer; /* Menambahkan kursor pointer saat hover untuk menunjukkan bahwa kotak bisa diklik */
 }
 
 .kotak:hover {
-    transform: translateY(-7px);
-    /* Mengangkat kotak sedikit saat hover */
+    transform: translateY(-7px); /* Mengangkat kotak sedikit saat hover */
     transition: transform 0.3s ease;
-    border: 1px solid #000000;
-    /* Menambahkan border saat hover */
+    border: 1px solid #000000; /* Menambahkan border saat hover */
 }
 
 .nama-team {
     position: absolute;
-    bottom: 10px;
-    /* Menempatkan nama team di bagian bawah kotak */
+    bottom: 10px; /* Menempatkan nama team di bagian bawah kotak */
     left: 15px;
     font-size: 18px;
     background-color: #000000;
@@ -376,14 +357,10 @@ h2 {
     font-family: 'Gill Sans', Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
 }
 
-.Team,
-.Shoes,
-.Clothing,
-.Jacket {
+.Team, .Shoes, .Clothing, .Jacket {
     display: flex;
     gap: 5px;
-    overflow-x: auto;
-    /* Biar kalau produknya banyak, bisa di-scroll ke samping */
+    overflow-x: auto; /* Biar kalau produknya banyak, bisa di-scroll ke samping */
     padding-bottom: 15px;
 }
 
@@ -398,15 +375,13 @@ h2 {
 .kotak-team img {
     width: 100%;
     height: auto;
-    display: block;
-    /* Menghilangkan jarak bawah pada gambar */
+    display: block; /* Menghilangkan jarak bawah pada gambar */
 }
 
 .kotak img {
     width: 100%;
     height: 320px;
-    object-fit: cover;
-    /* Memaksa gambar mengisi penuh kotak tanpa merusak rasio/proporsinya */
+    object-fit: cover; /* Memaksa gambar mengisi penuh kotak tanpa merusak rasio/proporsinya */
 }
 
 .kotak-deskripsi {
@@ -426,55 +401,7 @@ h2 {
     padding: 20px 0;
 }
 
-@media(min-width:360px) {
-    .menuutama {
-        display: none;
-    }
-
-    .gambaradidasxcocacola {
-        width: auto;
-        height: 450px;
-    }
-
-    .cocacola-text {
-        font-size: 10px;
-        bottom: 20px;
-
-    }
-
-    .cocacola-text2 {
-        font-size: 10px;
-        bottom: 10px;
-    }
-
-    .cocacola-text3 {
-        font-size: 10px;
-        bottom: 5px;
-    }
-}
-
 @media(min-width:720px) {
     .menuutama {
-        display: block;
-    }
-
-    .gambaradidasxcocacola {
-        width: 100%;
-        height: auto;
-    }
-
-    .cocacola-text {
-        font-size: 20px; 
-        bottom: 22%;
-    }
-
-    .cocacola-text2 {
-        font-size: 20px;
-        bottom: 16%;
-    }
-
-    .cocacola-text3 {
-        font-size: 20px;
-        bottom: 9%;
     }
 }
