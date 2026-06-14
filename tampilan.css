@@ -329,13 +329,7 @@ h2 {
     border: 1px solid black;
 }
 
-.tepi1 {
-    background-color: #ffffff;
-    margin: 50px;
-    color: #000000;
-}
-
-.tepi2 {
+.tepi {
     background-color: #ffffff;
     margin: 50px;
     color: #000000;
@@ -429,19 +423,11 @@ h2 {
     padding-bottom: 15px;
 }
 
-.tepi1 h1 {
+.tepi h1 {
     margin: 0 0 5px 10px;
 }
 
-.tepi1 h3 {
-    margin: 10px 0 5px 10px;
-}
-
-.tepi2 h1 {
-    margin: 0 0 5px 10px;
-}
-
-.tepi2 h3 {
+.tepi h3 {
     margin: 10px 0 5px 10px;
 }
 
