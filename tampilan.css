@@ -45,7 +45,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'sans-serif', Verdana, Geneva, Tahoma,
+    font-family: 'sans-serif', Verdana, Geneva, Tahoma;
 }
 
 .navbar {
@@ -255,7 +255,11 @@ h2 {
 
 .gambarworldcup {
     color:black;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .adidasxworldcup {
@@ -325,7 +329,13 @@ h2 {
     border: 1px solid black;
 }
 
-.tepi {
+.tepi1 {
+    background-color: #ffffff;
+    margin: 50px;
+    color: #000000;
+}
+
+.tepi2 {
     background-color: #ffffff;
     margin: 50px;
     color: #000000;
@@ -419,11 +429,19 @@ h2 {
     padding-bottom: 15px;
 }
 
-.tepi h1 {
+.tepi1 h1 {
     margin: 0 0 5px 10px;
 }
 
-.tepi h3 {
+.tepi1 h3 {
+    margin: 10px 0 5px 10px;
+}
+
+.tepi2 h1 {
+    margin: 0 0 5px 10px;
+}
+
+.tepi2 h3 {
     margin: 10px 0 5px 10px;
 }
 
